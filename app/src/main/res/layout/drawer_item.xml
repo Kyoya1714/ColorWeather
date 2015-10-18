@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/earth"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/city"
+            android:layout_toRightOf="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My City"
+            android:layout_alignTop="@id/iv"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/location"
+            android:layout_below="@id/city"
+            android:layout_alignLeft="@id/city"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:layout_height="wrap_content"
+            android:textColor="#eee"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+    <!--分隔线-->
+    <View
+        android:id="@+id/split"
+        android:layout_below="@id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        ></View>
+
+    <ScrollView
+        android:layout_below="@id/split"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="35dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/switchCity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_text"
+            >
+            <ImageView
+                android:id="@+id/iv_city"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/city"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/iv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="切换城市"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/beauty"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_text"
+            >
+            <ImageView
+                android:id="@+id/iv_beauty"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/beauty"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/iv_beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="主题模式"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/product"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_text"
+            >
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/about"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/iv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="产品信息"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_text"
+            >
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/share"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="分享APP"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

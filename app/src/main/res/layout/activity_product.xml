@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hao.colorweather.ProductActivity">
+    <RelativeLayout
+        android:elevation="10dp"
+        android:id="@+id/rl_title"
+        android:background="@color/action_blue"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/selector_back"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品信息"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+    <ImageView
+
+        android:layout_below="@+id/rl_title"
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ddd"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/icon"
+        android:text="版本"
+        />
+
+</RelativeLayout>

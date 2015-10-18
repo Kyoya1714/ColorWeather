@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="500" android:exitFadeDuration="500"
+    >
+    <item android:state_pressed="true" android:drawable="@mipmap/back_press">
+
+    </item>
+    <item android:state_pressed="false" android:drawable="@mipmap/back_default">
+
+    </item>
+
+</selector>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--标题 星期三 今天-->
+    <TextView
+        android:id="@+id/week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星期"
+        android:layout_marginLeft="15dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/week"
+        android:textColor="#eee"
+        android:textSize="18sp"
+        />
+    <!-- 分隔线-->
+    <View
+        android:id="@+id/splite"
+        android:layout_below="@id/week"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="#fff"></View>
+    <!-- 今天天气-->
+    <TableLayout
+        android:id="@+id/tb_hour"
+        android:layout_below="@id/splite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tr"
+            >
+        </TableRow>
+        </HorizontalScrollView>
+    </TableLayout>
+    <!-- 分隔线-->
+    <View
+        android:layout_below="@id/tb_hour"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="40dp"
+        android:background="#fff"></View>
+
+
+</RelativeLayout>

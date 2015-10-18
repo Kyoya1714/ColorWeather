@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+<!--当前温度-->
+ <TextView
+    android:id="@+id/tv_temp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:textColor="#fff"
+    android:text="30℃"
+    android:textSize="60dp"
+    />
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_temp"
+            android:gravity="center_horizontal"
+            >
+            <!--今日最低温度-->
+            <TextView
+                android:id="@+id/temp_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/min"
+                android:text="24℃  /  "
+                android:textSize="14sp"
+                android:textColor="#eee"
+                />
+            <!--今日最高温度-->
+            <TextView
+                android:id="@+id/temp_max"
+                android:layout_toRightOf="@id/temp_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/max"
+                android:text="30℃"
+                android:textSize="14sp"
+                android:textColor="#eee"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_aqi"
+            android:layout_toRightOf="@id/tv_temp"
+            android:layout_alignTop="@id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_aqi"
+                android:layout_width="22dp"
+                android:layout_height="28dp"
+                android:background="@mipmap/aqi_verygood"
+                />
+            <com.hao.colorweather.ui.MyFocuseTextView
+                android:id="@+id/tv_aqi"
+                android:layout_toRightOf="@id/iv_aqi"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:text="空气优"
+                android:layout_centerVertical="true"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_tip"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@mipmap/c100"
+        android:layout_centerHorizontal="true"
+        />
+        <!--天气描述-->
+        <TextView
+            android:id="@+id/tv_txt"
+            android:layout_above="@+id/iv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:text="多云"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ddd"
+            android:textSize="11sp"
+            android:text="xxx发布"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            />
+    
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.hao.android50test"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+       >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 内容界面 -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <FrameLayout
+                            android:id="@+id/fl_now"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/fl_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/fl_hour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </FrameLayout>
+                        <FrameLayout
+                            android:id="@+id/fl_daily"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        </FrameLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+        <!-- 侧滑菜单内容 -->
+
+        <FrameLayout
+            android:id="@+id/drawer_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#fff"
+
+             >
+
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/welcome"
+        />
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pb"
+            android:text="loading..."
+            android:textColor="#888"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="『simplelife』"
+            android:textSize="14sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="#999"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,114 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:orderInCategory="90"
+        android:title="主题选择"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_red"
+        android:orderInCategory="100"
+        android:title="鲜红"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_pink"
+        android:orderInCategory="100"
+        android:title="粉红"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_purple"
+        android:orderInCategory="100"
+        android:title="正紫"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_deep_purple"
+        android:orderInCategory="100"
+        android:title="蓝紫"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_indigo_blue"
+        android:orderInCategory="100"
+        android:title="蔚蓝"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_blue"
+        android:orderInCategory="100"
+        android:title="晶蓝"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_light_blue"
+        android:orderInCategory="100"
+        android:title="天蓝"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_cyan"
+        android:orderInCategory="100"
+        android:title="湖蓝"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_teal"
+        android:orderInCategory="100"
+        android:title="海绿"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_green"
+        android:orderInCategory="100"
+        android:title="春绿"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_light_green"
+        android:orderInCategory="100"
+        android:title="嫩绿"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_lime"
+        android:orderInCategory="100"
+        android:title="青柠"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_amber"
+        android:orderInCategory="100"
+        android:title="月黄"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_orange"
+        android:orderInCategory="100"
+        android:title="琥珀"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_deep_orange"
+        android:orderInCategory="100"
+        android:title="阳橙"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_brown"
+        android:orderInCategory="100"
+        android:title="鞍褐"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_grey"
+        android:orderInCategory="100"
+        android:title="暗灰"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_bule_grey"
+        android:orderInCategory="100"
+        android:title="蓝灰"
+        app:showAsAction="never"/>
+
+
+</menu>
